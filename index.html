@@ -8,15 +8,18 @@
 		        content="AngularJS Demo Application">
 		  	<meta name="fragment" content="!">
 		  	<title>AngularJS Tutorial</title>
-		  	<link rel="stylesheet" type="text/css" href="/project/app/assets/css/base.css"/>
-		  	<script src="/project/angular.js"></script>
-		  	<script src="/project/app/app.module.js" type="text/javascript"></script>
-		  	<script src="/project/app/libs/require.js" type="text/javascript"></script>
-		  	<script src="/project/app/common/login/loginController.js" type="text/javascript"></script>
-		  	<script src="/project/app/common/login/loginService.js" type="text/javascript"></script>
+		  	<link rel="stylesheet" type="text/css" href="/Bookmark/app/assets/css/base.css"/>
+		  	<script src="/Bookmark/angular.js"></script>
+		  	<script src="/Bookmark/angular-route.js"></script>
+		  	<script src="/Bookmark/app/app.module.js" type="text/javascript"></script>
+		  	<script src="/Bookmark/app/app.route.js" type="text/javascript"></script>
+		  	<script data-main="/Bookmark/app/app.route.js" src="/Bookmark/app/libs/require.js" type="text/javascript"></script>
+		  	<script src="/Bookmark/app/modules/login/loginController.js" type="text/javascript"></script>
+		  	<script src="/Bookmark/app/modules/login/loginService.js" type="text/javascript"></script>
 	</head>
 	<body>
-		<div ng-controller="LoginController" id="loginForm">
+		<div  ng-view></div>
+		<!-- <div ng-controller="LoginController" id="loginForm">
 			<h2>LOGIN</h2>
 			<div class="row">
 				<label for="userNameTxt">User Name:</label>
@@ -27,7 +30,8 @@
 				<input if="pwdTxt" type="password" ng-model="password"/>
 			</div>
 			<button ng-click="AuthLogin()">Login</button>
-			<p><a href="javascript:void(0);">Click to Register Now</a></p>
-		</div>
+			<p><a href="/resgister">Click to Register Now</a></p>
+		</div> -->
+
 	</body>
 </html>
